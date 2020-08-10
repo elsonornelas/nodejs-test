@@ -85,7 +85,7 @@ const userRoutes = (app, fs) => {
                 newArray[r] = t;
             }
             const compareArray = newArray.map((n, i) => i > 0 ? newArray[i].index-newArray[i-1].index : n.index);
-            const diffArray = compareArray.slice(0,nb_picks).filter(n => n < 500 && n > -500);
+            const diffArray = compareArray.slice(0,nb_picks).filter(n => n < 2 && n > -2);
             if (diffArray.length > 0) {
                 console.log('shuffled');
                 randomResult(myArray,nb_picks);
