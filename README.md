@@ -13,6 +13,31 @@ This starter kit is really designed as a kick off point for your own API adventu
 3. Add your new route file into the main routes file located at `./routes/routes.js`
 
 
+## Running
+
+1. Please install the required packages. `npm install`
+2. Start the server and run the app. `npm start`
+
+## Testcases
+
+http://localhost:3001/acronym?from=50&limit=2&search=eyes
+http://localhost:3001/acronym/ZZZZ
+http://localhost:3001/random/5
+
+http://localhost:3001/acronym (POST request)
+
+{ "new-acronym": "VLUE" }
+
+http://localhost:3001/acronym/new-acronym (PUT request)
+
+Request header: token should be `SERVER-TOKEN`
+Request body: { data: "Updated Acronym Content" }
+
+http://localhost:3001/acronym/new-acronym (DELETE request)
+
+Request header: token should be `SERVER-TOKEN`
+
+
 
 
 
